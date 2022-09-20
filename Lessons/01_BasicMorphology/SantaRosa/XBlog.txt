@@ -1,0 +1,6486 @@
+  **********************************************************
+                     Welcome to XBeach
+ 
+              version 1.23.5526 XBeachX release
+               date09-11-2018 11:14:26
+     URL:http://svn.oss.deltares.nl/repos/xbeach/trunk/
+  **********************************************************
+ 
+  Simulation started: YYYYMMDD    hh:mm:ss     time zone (UTC)
+                      20220920  12:04:00     -0400
+ 
+  General Input Module
+  Reading input parameters:
+   XBeach reading fromparams.txt
+  --------------------------------
+  Physical processes:
+                 wavemodel =surfbeat
+                    cyclic =0 (no record found, default value used)
+                     swave =1 (no record found, default value used)
+                single_dir =1
+                     lwave =1 (no record found, default value used)
+                      flow =1 (no record found, default value used)
+                  sedtrans =1 (no record found, default value used)
+                morphology =1 (no record found, default value used)
+               avalanching =1 (no record found, default value used)
+                    gwflow =0 (no record found, default value used)
+                     ships =0 (no record found, default value used)
+                vegetation =0 (no record found, default value used)
+                  setbathy =0 (no record found, default value used)
+                 viscosity =1 (no record found, default value used)
+                 advection =1 (no record found, default value used)
+                      wind =1 (no record found, default value used)
+  --------------------------------
+  Grid parameters:
+                  gridform =xbeach (no record found, default value used)
+                      xori =-39.1163
+                      yori =90.0000
+                      alfa =.0000 (no record found, default value used)
+                        nx =177
+                        ny =45
+                    posdwn =.0000
+                   depfile =bed.dep
+                     vardx =1
+                        dx =-1.0000 (no record found, default value used)
+                        dy =-1.0000 (no record found, default value used)
+                     xfile =x.grd
+                     yfile =y.grd
+                        nz =1 (no record found, default value used)
+                  thetamin =-90.0000
+                  thetamax =90.0000
+                 thetanaut =0 (no record found, default value used)
+  dtheta will automatically be computed from thetamin and thetamax for single_di
+ r = 1
+                  dtheta_s =10.0000
+  --------------------------------
+  Model time parameters:
+                       CFL =.7000 (no record found, default value used)
+                     dtset =.0000 (no record found, default value used)
+                     tstop =16200.0000
+                  maxdtfac =50.0000 (no record found, default value used)
+  --------------------------------
+  Physical constants:
+                       rho =1025.0000 (no record found, default value used)
+                         g =9.8100 (no record found, default value used)
+                depthscale =1.0000 (no record found, default value used)
+  --------------------------------
+  Initial conditions:
+                zsinitfile = None specified
+  --------------------------------
+  Wave boundary condition parameters:
+                   wbctype =parametric
+                    bcfile =jonswap.txt
+                     taper =100.0000 (no record found, default value used)
+                      nmax =.8000 (no record found, default value used)
+              nonhspectrum =0 (no record found, default value used)
+                      Hrms =1.0000 (no record found, default value used)
+                      Tm01 =10.0000 (no record found, default value used)
+                      Trep =10.0000 (no record found, default value used)
+                      dir0 =270.0000 (no record found, default value used)
+                         m =10 (no record found, default value used)
+               lateralwave =neumann (no record found, default value used)
+  --------------------------------
+  Wave-spectrum boundary condition parameters:
+                    random =0
+                   fcutoff =.0000 (no record found, default value used)
+                   trepfac =.0100 (no record found, default value used)
+                   sprdthr =.0800 (no record found, default value used)
+                Tm01switch =0 (no record found, default value used)
+                        rt =16200.0000 Warning: value > recommended value of7200
+ .0000
+                      dtbc =1.0000 (no record found, default value used)
+              nspectrumloc =1 (no record found, default value used)
+  --------------------------------
+  Flow boundary condition parameters:
+                     front =abs_2d (no record found, default value used)
+                      left =neumann (no record found, default value used)
+                     right =neumann (no record found, default value used)
+                      back =abs_2d (no record found, default value used)
+                       ARC =1 (no record found, default value used)
+                     order =2.0000 (no record found, default value used)
+                  highcomp =0 (no record found, default value used)
+                  freewave =0 (no record found, default value used)
+                      epsi =-1.0000 (no record found, default value used)
+                  tidetype =velocity (no record found, default value used)
+  --------------------------------
+  Tide boundary conditions:
+                   tideloc =2
+                paulrevere =land (no record found, default value used)
+                   zs0file =tide.txt
+  --------------------------------
+  Discharge boundary conditions:
+            disch_loc_file = None specified
+     disch_timeseries_file = None specified
+                ndischarge =0 (no record found, default value used)
+               ntdischarge =0 (no record found, default value used)
+                      beta =.1000 (no record found, default value used)
+  --------------------------------
+  Wave breaking parameters:
+                     break =roelvink2 (no record found, default value used)
+                     gamma =.5500 (no record found, default value used)
+                    gammax =2.0000 (no record found, default value used)
+                     alpha =1.0000 (no record found, default value used)
+                         n =10.0000 (no record found, default value used)
+                     delta =.0000 (no record found, default value used)
+                        fw =.0000 (no record found, default value used)
+                    fwfile = None specified
+                  fwcutoff =1000.0000 (no record found, default value used)
+              breakerdelay =1.0000 (no record found, default value used)
+  --------------------------------
+  Roller parameters:
+                    roller =1 (no record found, default value used)
+                       rfb =0 (no record found, default value used)
+  --------------------------------
+  Wave-current interaction parameters:
+                       wci =0 (no record found, default value used)
+                      hwci =.1000 (no record found, default value used)
+                   hwcimax =100.0000 (no record found, default value used)
+                      cats =4.0000 (no record found, default value used)
+  --------------------------------
+  Flow parameters:
+               bedfriction =chezy
+               bedfricfile = None specified
+               bedfriccoef =55.0000
+                     droot =.5000 (no record found, default value used)
+                     dstem =.5000 (no record found, default value used)
+                     maxcf =.0400 (no record found, default value used)
+                       nuh =.1000 (no record found, default value used)
+                    nuhfac =1.0000 (no record found, default value used)
+                      smag =1 (no record found, default value used)
+  --------------------------------
+  Coriolis force parameters:
+                    wearth =.0417 (no record found, default value used)
+                       lat =.0000 (no record found, default value used)
+  --------------------------------
+  Wind parameters:
+                      rhoa =1.2500 (no record found, default value used)
+                        Cd =.0020 (no record found, default value used)
+                  windfile = None specified
+                     windv =.0000 (no record found, default value used)
+                    windth =270.0000 (no record found, default value used)
+  --------------------------------
+  Sediment transport parameters:
+                      form =vanthiel_vanrijn (no record found, default value use
+ d)
+                  waveform =vanthiel (no record found, default value used)
+                       sws =1 (no record found, default value used)
+                       lws =1 (no record found, default value used)
+                     BRfac =1.0000 (no record found, default value used)
+                     facua =.1000 (no record found, default value used)
+                     facSk =.1000 (no record found, default value used)
+                     facAs =.1000 (no record found, default value used)
+                     Tbfac =1.0000 (no record found, default value used)
+                      turb =bore_averaged (no record found, default value used)
+                   turbadv =none (no record found, default value used)
+                       sus =1 (no record found, default value used)
+                       bed =1 (no record found, default value used)
+                      bulk =0 (no record found, default value used)
+                     facsl =.1500 (no record found, default value used)
+                        z0 =.0060 (no record found, default value used)
+                      smax =-1.0000 (no record found, default value used)
+               bdslpeffmag =roelvink_total (no record found, default value used)
+               bdslpeffini =none (no record found, default value used)
+               bdslpeffdir =none (no record found, default value used)
+               reposeangle =30.0000 (no record found, default value used)
+                     tsfac =.1000 (no record found, default value used)
+                     Tsmin =.5000 (no record found, default value used)
+                     facDc =1.0000 (no record found, default value used)
+                       lwt =0 (no record found, default value used)
+                     betad =1.0000 (no record found, default value used)
+                fallvelred =0 (no record found, default value used)
+                 dilatancy =0 (no record found, default value used)
+  --------------------------------
+  Bed composition parameters:
+                       ngd =1 (no record found, default value used)
+                        nd =3 (no record found, default value used)
+                       por =.4000 (no record found, default value used)
+                       D50 =.0002
+                       D90 =.0003
+                      rhos =2650.0000 (no record found, default value used)
+                       dzg =.1000 (no record found, default value used)
+                      dzg1 =.1000 (no record found, default value used)
+                      dzg2 =.1000 (no record found, default value used)
+                      dzg3 =.1000 (no record found, default value used)
+   sedcal =1.0000 (no record found, default value used)
+   ucrcal =1.0000 (no record found, default value used)
+  --------------------------------
+  Morphology parameters:
+                    morfac =10.0000
+                 morfacopt =1 (no record found, default value used)
+                  morstart =.0000 (no record found, default value used)
+                   morstop =16200.0000 (no record found, default value used)
+                    wetslp =.1500
+                    dryslp =1.0000
+                   hswitch =.1000 (no record found, default value used)
+                     dzmax =.0500 (no record found, default value used)
+                    struct =0 (no record found, default value used)
+  --------------------------------
+  Output variables:
+                   timings =1 (no record found, default value used)
+                    tunits = None specified
+                    tstart =.0000
+                      tint =1.0000 (no record found, default value used)
+                  tsglobal = None specified
+                     tintg =120.0000
+                  tspoints = None specified
+                     tintp =1.0000 (no record found, default value used)
+                    tsmean = None specified
+                     tintm =16200.0000
+                nglobalvar =5
+   nglobalvar: Will generate global output for variable:H
+   nglobalvar: Will generate global output for variable:u
+   nglobalvar: Will generate global output for variable:v
+   nglobalvar: Will generate global output for variable:zs
+   nglobalvar: Will generate global output for variable:zb
+                   npoints =0 (no record found, default value used)
+                  nrugauge =0 (no record found, default value used)
+                 npointvar =0 (no record found, default value used)
+                 nrugdepth =1 (no record found, default value used)
+   rugdepth =.0000 (no record found, default value used)
+                  nmeanvar =0 (no record found, default value used)
+              outputformat =netcdf
+           outputprecision =double (no record found, default value used)
+                ncfilename = None specified
+  netcdf output to:xboutput.nc
+              remdryoutput =1 (no record found, default value used)
+  --------------------------------
+  Output projection:
+                projection = None specified
+                    rotate =1 (no record found, default value used)
+  --------------------------------
+  Wave numerics parameters:
+                    scheme =warmbeam (no record found, default value used)
+                    wavint =60.0000 (no record found, default value used)
+                  maxerror =.0001 (no record found, default value used)
+            maxerror_angle =1.0000 (no record found, default value used)
+                   maxiter =500 (no record found, default value used)
+  --------------------------------
+  Flow numerics parameters:
+                       eps =.0050 (no record found, default value used)
+                    eps_sd =.5000 (no record found, default value used)
+                      umin =.0000 (no record found, default value used)
+                      hmin =.2000 (no record found, default value used)
+                  secorder =0 (no record found, default value used)
+  --------------------------------
+  Sediment transport numerics parameters:
+                  thetanum =1.0000 (no record found, default value used)
+                      cmax =.1000 (no record found, default value used)
+  --------------------------------
+  Bed update numerics parameters:
+                   frac_dz =.7000 (no record found, default value used)
+                    nd_var =2 (no record found, default value used)
+                     split =1.0100 (no record found, default value used)
+                     merge =.0100 (no record found, default value used)
+  --------------------------------
+  Finished reading input parameters
+  --------------------------------
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in station
+ ary solver
+           (wave direction) component of single_dir wave model. Wave directions 
+ will be solved
+           using 2nd order upwind scheme. Wave group propagation component will 
+ be soved using
+           Warming and Beam scheme
+   Unknown, unused or multiple statements of parameterDTHETA inparams.txt
+  ------------------------------------
+  Building Grid and Bathymetry
+  ------------------------------------
+  Initializing .....
+   readtide: reading tide time series fromtide.txt ...
+  --------------------------------
+  Initializing spectral wave boundary conditions
+  --------------------------------
+  NetCDF outputformat
+   Creating netcdf variable:H
+   Creating netcdf variable:u
+   Creating netcdf variable:v
+   Creating netcdf variable:zs
+   Creating netcdf variable:zb
+  Writing file definition.
+  Setting up boundary conditions
+  --------------------------------
+  Calculating spectral wave boundary conditions
+  --------------------------------
+  Reading spectrum at location1
+   waveparams: Reading from:jonswap.txt ...
+   XBeach reading fromjonswap.txt
+                    nmodal =1 (no record found, default value used)
+                       Hm0 =6.0000 Warning: value > recommended value of5.0000
+                        fp =.0667
+                  gammajsp =3.3000
+                         s =20.0000
+   tma =0 (no record found, default value used)
+                   mainang =280.0000
+                      fnyq =1.0000
+                       dfj =.0050 (no record found, default value used)
+  Interpreting spectrum at location1
+  Values calculated from interpolated spectrum:
+  Hm0       =6.00 m
+  Trep      =13.72 s
+  Mean dir  =280.22 degN
+  Overall Trep from all spectra calculated:13.72 s
+   Writing stationary wave energy directional spread toEs_reuse.bcf ...
+  Calculating Fourier components
+  5.0% done
+  10.0% done
+  15.0% done
+  20.0% done
+  25.0% done
+  30.0% done
+  35.0% done
+  40.0% done
+  45.0% done
+  50.0% done
+  55.0% done
+  60.0% done
+  65.0% done
+  70.0% done
+  75.0% done
+  80.0% done
+  85.0% done
+  90.0% done
+  95.0% done
+  100.0% done
+  Wave energy outside computational domain at offshore boundary:.0%
+  Calculating short wave time series for theta bin1 of1
+ Calculating wave energy envelope at boundary.
+  6.5% done
+  10.9% done
+  15.2% done
+  21.7% done
+  26.1% done
+  30.4% done
+  37.0% done
+  41.3% done
+  45.7% done
+  50.0% done
+  56.5% done
+  60.9% done
+  65.2% done
+  71.7% done
+  76.1% done
+  80.4% done
+  87.0% done
+  91.3% done
+  95.7% done
+  100.0% done
+  Wave bin1 contains100.00% of total energy
+   Writing wave energy toE_reuse.bcf ...
+  file done
+  Calculating primary wave interaction
+  5.0% done
+  10.1% done
+  15.1% done
+  20.1% done
+  25.1% done
+  30.2% done
+  35.2% done
+  40.2% done
+  45.2% done
+  50.3% done
+  55.3% done
+  60.3% done
+  65.3% done
+  70.4% done
+  75.4% done
+  80.4% done
+  85.4% done
+  90.5% done
+  95.5% done
+  100.0% done
+  Warning: shallow water so long wave variance is reduced using par%nmax
+  Calculating flux at boundary
+  6.5% done
+  10.9% done
+  15.2% done
+  21.7% done
+  26.1% done
+  30.4% done
+  37.0% done
+  41.3% done
+  45.7% done
+  50.0% done
+  56.5% done
+  60.9% done
+  65.2% done
+  71.7% done
+  76.1% done
+  80.4% done
+  87.0% done
+  91.3% done
+  95.7% done
+  100.0% done
+   Writing long wave mass flux toq_reuse.bcf ...
+  file done
+  --------------------------------
+  Spectral wave boundary conditions complete
+  --------------------------------
+  Boundary conditions complete, starting computation
+  Computing wave directions at t =.24 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 179
+  Computing wave directions at t =6.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  89
+  Computing wave directions at t =12.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Computing wave directions at t =18.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Computing wave directions at t =24.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =30.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  85
+  Computing wave directions at t =36.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 101
+  Computing wave directions at t =42.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =48.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 110
+  Computing wave directions at t =54.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 110
+  Computing wave directions at t =60.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Simulation  3.7 percent complete. Average dt  0.502 seconds
+  Time remaining  2 minutes and 13 seconds
+  Computing wave directions at t =66.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =72.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =78.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =84.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =90.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =96.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =102.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =108.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =114.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =120.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =126.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =132.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 108
+  Simulation  8.2 percent complete. Average dt  0.500 seconds
+  Time remaining  1 minutes and 48 seconds
+  Computing wave directions at t =138.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 106
+  Computing wave directions at t =144.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 106
+  Computing wave directions at t =150.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 103
+  Computing wave directions at t =156.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 116
+  Computing wave directions at t =162.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  94
+  Computing wave directions at t =168.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 121
+  Computing wave directions at t =174.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 136
+  Computing wave directions at t =180.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  95
+  Simulation 11.1 percent complete. Average dt  0.325 seconds
+  Time remaining  2 minutes and 28 seconds
+  Computing wave directions at t =186.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  93
+  Computing wave directions at t =192.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  98
+  Computing wave directions at t =198.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  81
+  Computing wave directions at t =204.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  97
+  Computing wave directions at t =210.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 108
+  Simulation 13.0 percent complete. Average dt  0.257 seconds
+  Time remaining  3 minutes and 16 seconds
+  Computing wave directions at t =216.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 104
+  Computing wave directions at t =222.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 120
+  Computing wave directions at t =228.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  86
+  Computing wave directions at t =234.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  98
+  Simulation 14.5 percent complete. Average dt  0.258 seconds
+  Time remaining  3 minutes and 38 seconds
+  Computing wave directions at t =240.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =246.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  87
+  Computing wave directions at t =252.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 152
+  Computing wave directions at t =258.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  87
+  Simulation 16.2 percent complete. Average dt  0.261 seconds
+  Time remaining  3 minutes and 23 seconds
+  Computing wave directions at t =264.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  80
+  Computing wave directions at t =270.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 147
+  Computing wave directions at t =276.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 106
+  Computing wave directions at t =282.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 108
+  Computing wave directions at t =288.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 123
+  Simulation 17.8 percent complete. Average dt  0.289 seconds
+  Time remaining  3 minutes and 48 seconds
+  Computing wave directions at t =294.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 103
+  Computing wave directions at t =300.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  87
+  Computing wave directions at t =306.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 101
+  Computing wave directions at t =312.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  95
+  Simulation 19.6 percent complete. Average dt  0.277 seconds
+  Time remaining  3 minutes and 20 seconds
+  Computing wave directions at t =318.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 119
+  Computing wave directions at t =324.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  72
+  Computing wave directions at t =330.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =336.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =342.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  93
+  Simulation 21.1 percent complete. Average dt  0.246 seconds
+  Time remaining  3 minutes and 41 seconds
+  Computing wave directions at t =348.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =354.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =360.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  85
+  Computing wave directions at t =366.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  84
+  Computing wave directions at t =372.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 122
+  Simulation 23.0 percent complete. Average dt  0.273 seconds
+  Time remaining  3 minutes and 27 seconds
+  Computing wave directions at t =378.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 109
+  Computing wave directions at t =384.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  81
+  Computing wave directions at t =390.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  84
+  Computing wave directions at t =396.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Simulation 24.8 percent complete. Average dt  0.267 seconds
+  Time remaining  3 minutes and 11 seconds
+  Computing wave directions at t =402.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  84
+  Computing wave directions at t =408.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 131
+  Computing wave directions at t =414.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  76
+  Computing wave directions at t =420.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  89
+  Computing wave directions at t =426.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Simulation 26.3 percent complete. Average dt  0.279 seconds
+  Time remaining  3 minutes and 33 seconds
+  Computing wave directions at t =432.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Computing wave directions at t =438.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =444.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  79
+  Computing wave directions at t =450.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 110
+  Simulation 28.1 percent complete. Average dt  0.238 seconds
+  Time remaining  3 minutes and  9 seconds
+  Computing wave directions at t =456.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  81
+  Computing wave directions at t =462.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  68
+  Computing wave directions at t =468.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  94
+  Computing wave directions at t =474.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 106
+  Computing wave directions at t =480.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  89
+  Simulation 29.6 percent complete. Average dt  0.257 seconds
+  Time remaining  3 minutes and 31 seconds
+  Computing wave directions at t =486.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  54
+  Computing wave directions at t =492.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  78
+  Computing wave directions at t =498.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  73
+  Computing wave directions at t =504.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =510.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  78
+  Simulation 31.5 percent complete. Average dt  0.272 seconds
+  Time remaining  3 minutes and  7 seconds
+  Computing wave directions at t =516.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  79
+  Computing wave directions at t =522.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  82
+  Computing wave directions at t =528.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Computing wave directions at t =534.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =540.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Simulation 33.4 percent complete. Average dt  0.247 seconds
+  Time remaining  3 minutes and  6 seconds
+  Computing wave directions at t =546.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =552.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =558.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Computing wave directions at t =564.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  98
+  Computing wave directions at t =570.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  82
+  Simulation 35.2 percent complete. Average dt  0.300 seconds
+  Time remaining  2 minutes and 56 seconds
+  Computing wave directions at t =576.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Computing wave directions at t =582.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  85
+  Computing wave directions at t =588.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  93
+  Computing wave directions at t =594.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  79
+  Computing wave directions at t =600.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  78
+  Simulation 37.1 percent complete. Average dt  0.306 seconds
+  Time remaining  2 minutes and 49 seconds
+  Computing wave directions at t =606.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  71
+  Computing wave directions at t =612.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  79
+  Computing wave directions at t =618.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  86
+  Computing wave directions at t =624.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Computing wave directions at t =630.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  54
+  Simulation 39.2 percent complete. Average dt  0.306 seconds
+  Time remaining  2 minutes and 28 seconds
+  Computing wave directions at t =636.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  74
+  Computing wave directions at t =642.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  72
+  Computing wave directions at t =648.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =654.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Computing wave directions at t =660.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  48
+  Computing wave directions at t =666.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Simulation 41.1 percent complete. Average dt  0.296 seconds
+  Time remaining  2 minutes and 38 seconds
+  Computing wave directions at t =672.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =678.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  87
+  Computing wave directions at t =684.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Computing wave directions at t =690.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  72
+  Computing wave directions at t =696.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =702.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  53
+  Simulation 43.4 percent complete. Average dt  0.275 seconds
+  Time remaining  2 minutes and 23 seconds
+  Computing wave directions at t =708.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  46
+  Computing wave directions at t =714.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  54
+  Computing wave directions at t =720.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =726.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  38
+  Computing wave directions at t =732.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  44
+  Simulation 45.5 percent complete. Average dt  0.273 seconds
+  Time remaining  2 minutes and 14 seconds
+  Computing wave directions at t =738.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =744.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  56
+  Computing wave directions at t =750.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Computing wave directions at t =756.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =762.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Simulation 47.4 percent complete. Average dt  0.277 seconds
+  Time remaining  2 minutes and 15 seconds
+  Computing wave directions at t =768.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  44
+  Computing wave directions at t =774.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  55
+  Computing wave directions at t =780.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  71
+  Computing wave directions at t =786.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  48
+  Computing wave directions at t =792.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Simulation 49.2 percent complete. Average dt  0.245 seconds
+  Time remaining  2 minutes and 17 seconds
+  Computing wave directions at t =798.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  55
+  Computing wave directions at t =804.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =810.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  97
+  Computing wave directions at t =816.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =822.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Simulation 51.0 percent complete. Average dt  0.249 seconds
+  Time remaining  2 minutes and 11 seconds
+  Computing wave directions at t =828.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =834.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =840.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =846.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =852.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  59
+  Simulation 52.7 percent complete. Average dt  0.292 seconds
+  Time remaining  2 minutes and  8 seconds
+  Computing wave directions at t =858.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  74
+  Computing wave directions at t =864.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  76
+  Computing wave directions at t =870.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Computing wave directions at t =876.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  78
+  Computing wave directions at t =882.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Simulation 54.7 percent complete. Average dt  0.267 seconds
+  Time remaining  1 minutes and 56 seconds
+  Computing wave directions at t =888.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  59
+  Computing wave directions at t =894.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  73
+  Computing wave directions at t =900.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =906.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Computing wave directions at t =912.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Simulation 56.3 percent complete. Average dt  0.255 seconds
+  Time remaining  2 minutes and  5 seconds
+  Computing wave directions at t =918.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =924.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  74
+  Computing wave directions at t =930.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =936.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =942.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Simulation 58.2 percent complete. Average dt  0.254 seconds
+  Time remaining  1 minutes and 55 seconds
+  Computing wave directions at t =948.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =954.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =960.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  71
+  Computing wave directions at t =966.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =972.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Simulation 60.0 percent complete. Average dt  0.280 seconds
+  Time remaining  1 minutes and 51 seconds
+  Computing wave directions at t =978.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  39
+  Computing wave directions at t =984.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  43
+  Computing wave directions at t =990.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =996.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Computing wave directions at t =1002.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Simulation 61.9 percent complete. Average dt  0.270 seconds
+  Time remaining  1 minutes and 43 seconds
+  Computing wave directions at t =1008.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =1014.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  40
+  Computing wave directions at t =1020.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Computing wave directions at t =1026.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Computing wave directions at t =1032.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Simulation 63.7 percent complete. Average dt  0.298 seconds
+  Time remaining  1 minutes and 38 seconds
+  Computing wave directions at t =1038.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Computing wave directions at t =1044.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =1050.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  42
+  Computing wave directions at t =1056.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  45
+  Computing wave directions at t =1062.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  44
+  Simulation 65.6 percent complete. Average dt  0.277 seconds
+  Time remaining  1 minutes and 34 seconds
+  Computing wave directions at t =1068.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  46
+  Computing wave directions at t =1074.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =1080.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  70
+  Computing wave directions at t =1086.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =1092.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Simulation 67.6 percent complete. Average dt  0.253 seconds
+  Time remaining  1 minutes and 23 seconds
+  Computing wave directions at t =1098.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  85
+  Computing wave directions at t =1104.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  68
+  Computing wave directions at t =1110.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Computing wave directions at t =1116.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  59
+  Computing wave directions at t =1122.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  48
+  Simulation 69.4 percent complete. Average dt  0.269 seconds
+  Time remaining  1 minutes and 22 seconds
+  Computing wave directions at t =1128.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  47
+  Computing wave directions at t =1134.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  55
+  Computing wave directions at t =1140.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  85
+  Computing wave directions at t =1146.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  68
+  Computing wave directions at t =1152.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Simulation 71.3 percent complete. Average dt  0.280 seconds
+  Time remaining  1 minutes and 16 seconds
+  Computing wave directions at t =1158.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =1164.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  Wave propagation row  84, iteration 500, error:.0003
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations: 500
+  Computing wave directions at t =1170.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  80
+  Computing wave directions at t =1176.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =1182.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Simulation 73.0 percent complete. Average dt  0.267 seconds
+  Time remaining  1 minutes and 16 seconds
+  Computing wave directions at t =1188.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =1194.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  70
+  Computing wave directions at t =1200.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  77
+  Computing wave directions at t =1206.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =1212.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  50
+  Simulation 75.0 percent complete. Average dt  0.268 seconds
+  Time remaining  1 minutes and  4 seconds
+  Computing wave directions at t =1218.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  47
+  Computing wave directions at t =1224.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =1230.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  45
+  Computing wave directions at t =1236.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Computing wave directions at t =1242.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  68
+  Computing wave directions at t =1248.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  59
+  Simulation 77.1 percent complete. Average dt  0.273 seconds
+  Time remaining  1 minutes and  2 seconds
+  Computing wave directions at t =1254.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  48
+  Computing wave directions at t =1260.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =1266.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =1272.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  56
+  Computing wave directions at t =1278.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =1284.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  45
+  Simulation 79.3 percent complete. Average dt  0.272 seconds
+  Time remaining 53 seconds
+  Computing wave directions at t =1290.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  98
+  Computing wave directions at t =1296.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  55
+  Computing wave directions at t =1302.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  45
+  Computing wave directions at t =1308.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =1314.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  58
+  Simulation 81.2 percent complete. Average dt  0.251 seconds
+  Time remaining 49 seconds
+  Computing wave directions at t =1320.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =1326.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =1332.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  40
+  Computing wave directions at t =1338.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =1344.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  64
+  Simulation 83.3 percent complete. Average dt  0.277 seconds
+  Time remaining 42 seconds
+  Computing wave directions at t =1350.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  75
+  Computing wave directions at t =1356.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  87
+  Computing wave directions at t =1362.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  89
+  Computing wave directions at t =1368.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  78
+  Computing wave directions at t =1374.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Simulation 84.8 percent complete. Average dt  0.261 seconds
+  Time remaining 47 seconds
+  Computing wave directions at t =1380.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  72
+  Computing wave directions at t =1386.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =1392.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Computing wave directions at t =1398.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  63
+  Computing wave directions at t =1404.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Simulation 86.7 percent complete. Average dt  0.265 seconds
+  Time remaining 36 seconds
+  Computing wave directions at t =1410.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  56
+  Computing wave directions at t =1416.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =1422.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =1428.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  49
+  Computing wave directions at t =1434.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Simulation 88.6 percent complete. Average dt  0.262 seconds
+  Time remaining 30 seconds
+  Computing wave directions at t =1440.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Computing wave directions at t =1446.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =1452.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  73
+  Computing wave directions at t =1458.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =1464.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  48
+  Simulation 90.7 percent complete. Average dt  0.253 seconds
+  Time remaining 24 seconds
+  Computing wave directions at t =1470.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  47
+  Computing wave directions at t =1476.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  61
+  Computing wave directions at t =1482.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Computing wave directions at t =1488.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  72
+  Computing wave directions at t =1494.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Simulation 92.6 percent complete. Average dt  0.268 seconds
+  Time remaining 19 seconds
+  Computing wave directions at t =1500.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Computing wave directions at t =1506.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  69
+  Computing wave directions at t =1512.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =1518.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  54
+  Computing wave directions at t =1524.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  44
+  Computing wave directions at t =1530.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  60
+  Simulation 94.5 percent complete. Average dt  0.258 seconds
+  Time remaining 15 seconds
+  Computing wave directions at t =1536.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  66
+  Computing wave directions at t =1542.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Computing wave directions at t =1548.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  51
+  Computing wave directions at t =1554.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  52
+  Computing wave directions at t =1560.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Simulation 96.4 percent complete. Average dt  0.247 seconds
+  Time remaining  9 seconds
+  Computing wave directions at t =1566.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  56
+  Computing wave directions at t =1572.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  62
+  Computing wave directions at t =1578.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  65
+  Computing wave directions at t =1584.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  57
+  Computing wave directions at t =1590.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  67
+  Simulation 98.3 percent complete. Average dt  0.275 seconds
+  Time remaining  4 seconds
+  Computing wave directions at t =1596.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  59
+  Computing wave directions at t =1602.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  84
+  Computing wave directions at t =1608.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  93
+  Computing wave directions at t =1614.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  77
+  Computing wave directions at t =1620.00 s
+  5.1% done
+  10.2% done
+  15.3% done
+  20.3% done
+  25.4% done
+  30.5% done
+  35.0% done
+  40.1% done
+  45.2% done
+  50.3% done
+  55.4% done
+  60.5% done
+  65.5% done
+  70.1% done
+  75.1% done
+  80.2% done
+  85.3% done
+  90.4% done
+  95.5% done
+  100.0% done
+  Maximum number of iterations:  73
+   Duration   :   264.203125000000      seconds
+   Timesteps  :        5790
+   Average dt :  0.279792746113990      seconds
+   Unit speed :  5.572903878880842E-006 seconds/1
+  End of program xbeach

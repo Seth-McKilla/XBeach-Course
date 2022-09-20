@@ -1,0 +1,12 @@
+                        rt =16200.0000 Warning: value > recommended value of7200
+ .0000
+  Warning: Warming and Beam [scheme=warmbeam] scheme is not supported in station
+ ary solver
+           (wave direction) component of single_dir wave model. Wave directions 
+ will be solved
+           using 2nd order upwind scheme. Wave group propagation component will 
+ be soved using
+           Warming and Beam scheme
+   Unknown, unused or multiple statements of parameterDTHETA inparams.txt
+                       Hm0 =6.0000 Warning: value > recommended value of5.0000
+  Warning: shallow water so long wave variance is reduced using par%nmax
