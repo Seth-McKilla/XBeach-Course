@@ -1,0 +1,72 @@
+%% XBeach model: test 
+%% Params created on 2022-09-21 11H:09m 
+%% Params created by seth 
+
+%% General 
+
+wavemodel           = surfbeat
+wbctype             = jonstable
+
+%% Grid 
+
+vardx               = 1
+nx                  = 163
+ny                  = 180
+xori                = 0
+yori                = 0
+xfile               = x.grd
+yfile               = y.grd
+depfile             = bed.dep
+thetamin            = -90
+thetamax            = 90
+dtheta              = 10
+
+%% par 
+
+Wavemodel           = surfbeat
+
+%% Physical processes 
+
+morphology          = 1
+
+%% Physical constants 
+
+befriccoef          = 0.01
+
+%% Model time 
+
+tstop               = 3700
+
+%% Morphology parameters 
+
+morfac              = 5
+morstart            = 100
+
+%% Output 
+
+tstart              = 0
+
+%% Wave boundary condition parameters 
+
+bcfile              = jonstable.txt
+
+%% Output variables 
+
+nglobalvar          = 3
+zb
+zs
+H
+
+npointvar           = 2
+zs
+H
+
+nmeanvar            = 1
+zb
+
+npoints             = 4
+1 0
+6 0
+10 0
+12 0
+
