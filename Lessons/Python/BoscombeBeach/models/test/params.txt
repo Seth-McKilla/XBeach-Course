@@ -10,7 +10,7 @@ wbctype             = jonstable
 %% Grid 
 
 vardx               = 1
-nx                  = 163
+nx                  = 150
 ny                  = 180
 xori                = 0
 yori                = 0

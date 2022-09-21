@@ -1,2 +1,2 @@
 cd models/test 
-call ..\exe_nonh\xbeach.exe
+call ../../../Release_1.23_XBeach-X/XBeachX/xbeach.exe
